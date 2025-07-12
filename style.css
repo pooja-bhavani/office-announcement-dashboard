@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+.header {
+  background: linear-gradient(to right, #cb6ce6, #004aad);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.header-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.profile {
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-weight: bold;
+}
+.top-nav {
+  display: flex;
+  gap: 15px;
+  padding: 10px 24px;
+  background: #e9ecef;
+  border-bottom: 1px solid #ccc;
+}
+.nav-icon {
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.main {
+  padding: 24px;
+}
+.announcement-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.primary-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+}
+.secondary-btn {
+  background: #dee2e6;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+}
+.search-box {
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.announcement-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+.announcement-table th, .announcement-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.announcement-table th {
+  background: #f8f9fa;
+}
+.alert {
+  margin-top: 20px;
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 6px;
+}
