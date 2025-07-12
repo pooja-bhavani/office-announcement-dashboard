@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Office Announcement Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="https://img.icons8.com/fluency/48/000000/office.png" class="logo">
+      <h1>WorkBoard - Dashboard</h1>
+    </div>
+    <div class="header-right">
+      <div class="icon">🔔</div>
+      <div class="icon">📩</div>
+      <div class="profile">PB</div>
+    </div>
+  </header>
+<div class="nav-icon">
+   <section class="challenge-highlight">
+  <h2>🎯 Frontend Challenge: “Build the Best Internal Dashboard”</h2>
+  <p>
+    🔗 View details:
+    <a href="https://dev.to/challenges" target="_blank">
+      Dev Community
+    </a>
+  </p>
+</section>
+  </nav>
+
+  <main class="main">
+    <section class="announcement-controls">
+      <input type="text" id="title" placeholder="Announcement Title" />
+      <!-- Start Date & Time -->
+      <input type="date" id="startDate" placeholder="Start Date" />
+      <input type="time" id="startTime" placeholder="Start Time" />
+
+      <!-- End Date & Time -->
+      <input type="date" id="endDate" placeholder="End Date" />
+      <input type="time" id="endTime" placeholder="End Time" />
+
+      <select id="status">
+        <option>Scheduled</option>
+        <option>Published</option>
+        <option>Draft</option>
+      </select>
+      <button class="primary-btn" onclick="addAnnouncement()">Add Announcement</button>
+    </section>
+
+    <table class="announcement-table">
+      <thead>
+        <tr>
+          <th><input type="checkbox" /></th>
+          <th>Title</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="announcementBody">
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="#">🛠️ Server Maintenance</a></td>
+          <td>Jul 14, 2025 2:00 AM</td>
+          <td>Jul 14, 2025 5:00 AM</td>
+          <td>Scheduled</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="alert" id="alertBox" style="display:none;">✅ Announcement posted successfully!</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
